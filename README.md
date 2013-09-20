@@ -1,6 +1,6 @@
 # ShowClix Engibeering Lightning Talk
 
-The source for the code that I showed in the lightning talk.  Slides are available [here](https://docs.google.com/presentation/d/1IoIkVcAyMk0icgrbrGI853haxMjbpGlTZStaWrsTm6A/edit?usp=sharing).
+The source for the code that I showed in the lightning talk.  Slides are available <a href="https://docs.google.com/presentation/d/1IoIkVcAyMk0icgrbrGI853haxMjbpGlTZStaWrsTm6A/edit?usp=sharing" target="_blank">here</here>.
 
 ## Dependencies
 
