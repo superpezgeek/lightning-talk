@@ -1,0 +1,33 @@
+<h2>Output</h2>
+<pre class="prettyprint" code-type="js" show-line-numbers="true">
+function myFunction(a,b)
+{
+    return a*b;
+}
+</pre>
+
+<h2>HTML</h2>
+<pre class="prettyprint" code-type="html" show-line-numbers="true">
+&lt;pre class="prettyprint" code-type="js" show-line-numbers="true"&gt;
+function myFunction(a,b)
+{
+    return a*b;
+}
+&lt;/pre>
+</pre>
+
+<h2>JavaScript</h2>
+<pre class="prettyprint" code-type="js" show-line-numbers="true">
+angular.module('lightningTalkApp')
+    .directive('prettyprint', function($window){
+        return{
+            restrict: 'C',
+            link: function(scope, elm, attr){
+                var showLineNumbers = scope.$eval(attr.showLineNumbers);
+                var codeType = attr.codeType;
+
+                elm.html( $window.prettyPrintOne( elm.html(), codeType, showLineNumbers ) );
+            }
+        }
+    });
+</pre>

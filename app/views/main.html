@@ -1,0 +1,22 @@
+<h2>Output</h2>
+<my-first-directive></my-first-directive>
+
+<h2>HTML</h2>
+<pre class="prettyprint" code-type="html" show-line-numbers="false">
+&lt;my-first-directive&gt;&lt;/my-first-directive&gt;
+</pre>
+
+<h2>JavaScript</h2>
+<pre class="prettyprint" code-type="js" show-line-numbers="true">
+angular.module('lightningTalkApp')
+    .directive('myFirstDirective', function(){
+        return {
+            restrict: 'E',
+            replace: true,
+            template: '&lt;div class="hero-unit"&gt;&lt;h1&gt;Hello, {{ name || "Anonymous" }}!&lt;/h1&gt;&lt;hr/&gt;&lt;input type="text" ng-model="name" /&gt;&lt;/div&gt;',
+            link: function(scope){
+                scope.name = "World";
+            }
+        }
+    });
+</pre>
